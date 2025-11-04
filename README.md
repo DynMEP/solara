@@ -29,7 +29,7 @@ Professional Solar+Storage Optimization Platform
 
 ## 📖 Overview
 
-**SOLARA** (Solar Analytics & Revenue Advisor) is a comprehensive open-source platform for designing, optimizing, and analyzing photovoltaic systems with battery energy storage. Built on NREL's validated PySAM models, SOLARA delivers professional-grade analysis capabilities comparable to commercial tools like **HOMER Pro** and **PVsyst**—with the transparency and flexibility of **open source**.
+**SOLARA** (Solar Analytics & Revenue Advisor) is a comprehensive open-source platform for designing, optimizing, and analyzing photovoltaic systems with battery energy storage. Built on NREL's validated PySAM models, SOLARA delivers professional-grade analysis capabilities comparable to commercial tools like **HOMER Pro** and **PVsyst** with the transparency and flexibility of **open source**.
 
 Developed by [Alfonso Dávila](https://www.linkedin.com/in/alfonso-davila-3a121087), a professional electrical engineer with 20+ years of experience in power systems, renewable energy, and MEP/BIM design, SOLARA brings decades of industry expertise into a powerful, accessible tool for the renewable energy community.
 
