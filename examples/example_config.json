@@ -1,0 +1,158 @@
+{
+  "_comment": "SOLARA Example Configuration - 100kW Commercial Solar + 200kWh Battery",
+  "_description": "This is a sample configuration for a commercial building in Denver, CO with time-of-use rates and demand charges",
+  
+  "project": {
+    "name": "Example Commercial Solar+Storage",
+    "description": "100kW rooftop PV + 200kWh battery for demand charge reduction",
+    "analyst": "SOLARA User",
+    "date": "2025-11-02"
+  },
+  
+  "location": {
+    "weather_file": "denver_co_39.7385_-104.985_psm3-tmy_60_tmy.csv",
+    "latitude": 39.7385,
+    "longitude": -104.985,
+    "timezone": -7,
+    "elevation": 1609,
+    "_notes": "Download weather file from https://nsrdb.nrel.gov/"
+  },
+  
+  "pv": {
+    "system_capacity": 100,
+    "module_type": 0,
+    "array_type": 1,
+    "dc_ac_ratio": 1.2,
+    "inv_eff": 96,
+    "tilt": 20,
+    "azimuth": 180,
+    "gcr": 0.4,
+    "losses": 14.08,
+    "soiling": 5,
+    "shading": 3,
+    "_notes": {
+      "module_type": "0=Standard, 1=Premium, 2=Thin film",
+      "array_type": "0=Fixed open rack, 1=Fixed roof mount, 2=1-axis, 3=2-axis, 4=Backtracked",
+      "azimuth": "180 = due south (Northern hemisphere)",
+      "losses": "Total system losses including wiring, connections, mismatch, etc."
+    }
+  },
+  
+  "battery": {
+    "enabled": true,
+    "initial_capacity": 200,
+    "chemistry": 1,
+    "ac_or_dc": 0,
+    "voltage": 500,
+    "max_charge_power": 100,
+    "max_discharge_power": 100,
+    "min_soc": 10,
+    "max_soc": 95,
+    "initial_soc": 50,
+    "round_trip_efficiency": 85,
+    "_notes": {
+      "chemistry": "0=Lead acid, 1=Li-ion NMC, 2=Li-ion LFP",
+      "ac_or_dc": "0=DC-coupled (before inverter), 1=AC-coupled (after inverter)",
+      "soc": "State of charge as percentage (0-100)"
+    }
+  },
+  
+  "load": {
+    "type": "commercial",
+    "annual_kwh": 500000,
+    "_notes": {
+      "type": "Options: 'file', 'commercial', 'residential', 'pattern'",
+      "annual_kwh": "Only used for generated profiles, not file-based loads"
+    }
+  },
+  
+  "rates": {
+    "structure": "tou",
+    "peak": {
+      "rate": 0.18,
+      "start_hour": 14,
+      "end_hour": 20,
+      "_notes": "Peak hours: 2 PM to 8 PM"
+    },
+    "mid_peak": {
+      "rate": 0.12,
+      "_notes": "Mid-peak: 8 AM to 2 PM and 8 PM to 10 PM"
+    },
+    "off_peak": {
+      "rate": 0.08,
+      "_notes": "Off-peak: 10 PM to 8 AM"
+    },
+    "sell_rate": 0.05,
+    "net_metering": true,
+    "demand_charges": {
+      "enabled": true,
+      "peak": 15.0,
+      "off_peak": 5.0,
+      "_notes": "Demand charges in $/kW for monthly peak demand"
+    },
+    "fixed_monthly": 20,
+    "_notes": {
+      "structure": "Options: 'flat' or 'tou'",
+      "rates": "All rates in $/kWh",
+      "net_metering": "true = 1:1 credit for exports, false = sell at sell_rate"
+    }
+  },
+  
+  "grid_services": {
+    "enabled": false,
+    "_notes": "Grid services like frequency regulation, demand response, etc."
+  },
+  
+  "financial": {
+    "analysis_period": 25,
+    "inflation_rate": 2.5,
+    "real_discount_rate": 6.4,
+    "federal_tax_rate": 21,
+    "state_tax_rate": 4.63,
+    "debt_fraction": 50,
+    "pv_cost_per_watt": 1.50,
+    "battery_cost_per_kwh": 400,
+    "om_cost_per_kw": 20,
+    "itc_federal": 30,
+    "_notes": {
+      "analysis_period": "Project lifetime in years",
+      "debt_fraction": "Percentage of project financed with debt (0-100)",
+      "pv_cost_per_watt": "Installed cost including hardware, labor, permitting",
+      "battery_cost_per_kwh": "Installed cost per kWh of usable capacity",
+      "om_cost_per_kw": "Annual O&M cost per kW of PV capacity",
+      "itc_federal": "Federal Investment Tax Credit (30% for solar+storage)"
+    }
+  },
+  
+  "environmental": {
+    "enabled": true,
+    "grid_carbon_intensity": 0.45,
+    "_notes": {
+      "grid_carbon_intensity": "kg CO2 per kWh from grid (US average ~0.45)"
+    }
+  },
+  
+  "optimization": {
+    "run_parametric": true,
+    "pv_scales": [0.5, 0.75, 1.0, 1.25, 1.5, 2.0],
+    "battery_sizes": [50, 100, 150, 200, 300, 400, 500, 750, 1000],
+    "dispatch_strategy": "economic",
+    "_notes": {
+      "run_parametric": "true = test multiple sizes, false = run single configuration",
+      "pv_scales": "Multipliers applied to base PV capacity",
+      "battery_sizes": "Battery capacities to test (kWh)",
+      "dispatch_strategy": "Options: 'economic', 'peak_shaving', 'self_consumption', 'backup_reserve'"
+    }
+  },
+  
+  "output": {
+    "generate_plots": true,
+    "generate_csv": true,
+    "verbose": true,
+    "_notes": {
+      "generate_plots": "Create PNG visualization files",
+      "generate_csv": "Export detailed results to CSV",
+      "verbose": "Show detailed progress messages"
+    }
+  }
+}

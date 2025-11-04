@@ -1,0 +1,113 @@
+cff-version: 1.2.0
+message: "If you use SOLARA in your research or professional work, please cite it using the metadata from this file."
+title: "SOLARA: Solar Analytics & Revenue Advisor"
+version: 3.1.1
+date-released: 2025-11-02
+url: "https://github.com/dynmep/solara"
+repository-code: "https://github.com/dynmep/solara"
+license: MIT
+type: software
+
+authors:
+  - family-names: "Dávila Vera"
+    given-names: "Alfonso Antonio"
+    email: "davila.alfonso@gmail.com"
+    affiliation: "DynMEP Engineering"
+    orcid: "https://orcid.org/0009-0001-3521-3802"  
+
+keywords:
+  - solar energy
+  - photovoltaic systems
+  - battery energy storage
+  - BESS
+  - optimization
+  - techno-economic analysis
+  - renewable energy
+  - grid services
+  - Python
+  - PySAM
+  - energy modeling
+  - NEC compliance
+  - MEP engineering
+  - microgrid
+  - revenue stacking
+  - machine learning
+  - Monte Carlo simulation
+  - energy arbitrage
+  - demand response
+  - carbon footprint
+
+abstract: >
+  SOLARA (Solar Analytics & Revenue Advisor) is a comprehensive 
+  open-source platform for photovoltaic and battery energy storage 
+  system design, optimization, and techno-economic analysis. Built 
+  on NREL's validated PySAM models, SOLARA provides professional-grade 
+  capabilities for multi-objective optimization, uncertainty 
+  quantification, grid services analysis, and NEC 2023 compliance 
+  documentation. The platform delivers analysis quality comparable 
+  to commercial tools like HOMER Pro and PVsyst while maintaining 
+  full transparency and customization through open-source code. Key 
+  features include machine learning optimization algorithms, revenue 
+  stacking for grid services, advanced battery degradation modeling, 
+  Monte Carlo uncertainty analysis, and automated NEC compliance 
+  calculations.
+
+references:
+  - type: software
+    title: "PySAM: Python Wrapper for System Advisor Model"
+    authors:
+      - name: "National Renewable Energy Laboratory"
+    year: 2024
+    url: "https://nrel-pysam.readthedocs.io/"
+    
+  - type: software
+    title: "System Advisor Model (SAM)"
+    authors:
+      - name: "National Renewable Energy Laboratory"
+    year: 2024
+    url: "https://sam.nrel.gov/"
+    
+  - type: article
+    title: "System Advisor Model General Description"
+    authors:
+      - family-names: "Blair"
+        given-names: "Nate"
+      - family-names: "DiOrio"
+        given-names: "Nicholas"
+      - family-names: "Freeman"
+        given-names: "Janine"
+      - family-names: "Gilman"
+        given-names: "Paul"
+      - family-names: "Janzou"
+        given-names: "Steven"
+      - family-names: "Neises"
+        given-names: "Ty"
+      - family-names: "Wagner"
+        given-names: "Michael"
+    year: 2018
+    publisher: "National Renewable Energy Laboratory"
+    url: "https://www.nrel.gov/docs/fy18osti/70414.pdf"
+    
+  - type: standard
+    title: "IEEE Standard 1547-2018 - IEEE Standard for Interconnection and Interoperability of Distributed Energy Resources"
+    authors:
+      - name: "IEEE"
+    year: 2018
+    
+  - type: standard
+    title: "NFPA 70: National Electrical Code (NEC) 2023"
+    authors:
+      - name: "National Fire Protection Association"
+    year: 2023
+    url: "https://www.nfpa.org/codes-and-standards/all-codes-and-standards/list-of-codes-and-standards/detail?code=70"
+
+preferred-citation:
+  type: software
+  title: "SOLARA: Solar Analytics & Revenue Advisor"
+  authors:
+    - family-names: "Dávila Vera"
+      given-names: "Alfonso Antonio"
+  year: 2025
+  version: "3.1.1"
+  url: "https://github.com/dynmep/solara"
+  license: MIT
