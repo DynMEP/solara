@@ -468,7 +468,7 @@ python solara.py --help
 ### Author
 **Alfonso Antonio Dávila Vera**  
 - Email: davila.alfonso@gmail.com  
-- LinkedIn: [alfonso-davila-3a121087](https://www.linkedin.com/in/alfonso-davila-3a121087)  
+- LinkedIn: [https://www.linkedin.com/in/alfonso-davila-vera](https://www.linkedin.com/in/alfonso-davila-vera) 
 - GitHub: [@DynMEP](https://github.com/DynMEP)
 
 ### Repository
