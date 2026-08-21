@@ -1,0 +1,29 @@
+SOLARA - Solar Analytics & Revenue Advisor
+Copyright (c) 2025 Alfonso Antonio Dávila Vera
+
+Author:        Alfonso Antonio Dávila Vera <davila.alfonso@gmail.com>
+Organization:  DynMEP Engineering
+Repository:    https://github.com/dynmep/solara
+
+SOLARA is released under the MIT License; see LICENSE for the full terms.
+This file records attribution only and imposes no additional conditions.
+
+
+THIRD-PARTY SOFTWARE
+
+SOLARA is built upon and integrates with:
+
+  NREL PySAM              BSD-3-Clause    https://nrel-pysam.readthedocs.io/
+  System Advisor Model    BSD-3-Clause    https://sam.nrel.gov/
+
+Users of this software should also acknowledge NREL's contributions:
+
+  National Renewable Energy Laboratory. (2024). PySAM: Python Wrapper
+  for System Advisor Model (SAM).
+  https://nrel-pysam.readthedocs.io/
+
+
+CITATION
+
+See CITATION.cff for citation metadata covering SOLARA and the NREL, IEEE
+and NFPA references it builds on.

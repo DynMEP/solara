@@ -19,27 +19,3 @@ AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
 LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
 OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 SOFTWARE.
-
----
-
-ADDITIONAL INFORMATION
-
-Project: SOLARA - Solar Analytics & Revenue Advisor
-Author: Alfonso Antonio Dávila Vera
-Organization: DynMEP Engineering
-Website: https://github.com/dynmep/solara
-Contact: davila.alfonso@gmail.com
-
-This software is built upon and integrates with:
-- NREL PySAM (BSD-3-Clause License)
-- System Advisor Model (BSD-3-Clause License)
-
-Users of this software should also acknowledge NREL's contributions:
-  National Renewable Energy Laboratory. (2024). PySAM: Python Wrapper 
-  for System Advisor Model (SAM). Retrieved from 
-  https://nrel-pysam.readthedocs.io/
-
-Citation:
-  Dávila, A. A. (2025). SOLARA v3.1.1: Solar Analytics & Revenue Advisor.
-  Open-source photovoltaic and energy storage optimization platform.
-  https://github.com/dynmep/solara

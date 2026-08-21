@@ -158,6 +158,7 @@ solara/
 ├── .gitignore                             # Python/SOLARA ignores
 ├── CITATION.cff                           # Citation metadata
 ├── LICENSE                                # MIT License
+├── NOTICE                                 # Third-party attribution
 ├── README.md                              # This file
 ├── requirements.txt                       # Dependencies
 ├── solara.py                              # Main CLI engine
@@ -495,7 +496,8 @@ python solara.py --help
 
 ## 📄 License
 
-MIT License - See [LICENSE](LICENSE) file for details
+MIT License - See [LICENSE](LICENSE) file for details.
+Third-party attribution (NREL PySAM and SAM, both BSD-3-Clause) is recorded in [NOTICE](NOTICE).
 
 **Free for:**
 - ✅ Commercial use
